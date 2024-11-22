@@ -1,8 +1,26 @@
 {
-  "name": "my-module",
+  "name": "nuxt-transition-expand",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "keywords": [
+    "vue",
+    "nuxt",
+    "nuxt3",
+    "nuxt-module",
+    "animations"
+  ],
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LorexIQ/nuxt-transition-expand.git"
+  },
+  "author": {
+    "name": "LorexIQ",
+    "email": "dmitrymurashko0@gmail.com",
+    "url": "https://lorexiq.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/LorexIQ/nuxt-transition-expand/issues"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -22,11 +40,9 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run lint && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
-    "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/kit": "^3.14.1592"
@@ -36,13 +52,11 @@
     "@nuxt/eslint-config": "^0.7.1",
     "@nuxt/module-builder": "^0.8.4",
     "@nuxt/schema": "^3.14.1592",
-    "@nuxt/test-utils": "^3.14.4",
     "@types/node": "latest",
     "changelogen": "^0.5.7",
     "eslint": "^9.15.0",
     "nuxt": "^3.14.1592",
     "typescript": "latest",
-    "vitest": "^2.1.5",
     "vue-tsc": "^2.1.10"
   }
 }
