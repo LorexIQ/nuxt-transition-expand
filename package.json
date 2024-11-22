@@ -44,18 +44,17 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "dependencies": {
-    "@nuxt/kit": "^3.14.1592"
-  },
   "devDependencies": {
     "@nuxt/devtools": "^1.6.1",
     "@nuxt/eslint-config": "^0.7.1",
+    "@nuxt/kit": "^3.14.1592",
     "@nuxt/module-builder": "^0.8.4",
     "@nuxt/schema": "^3.14.1592",
     "@types/node": "latest",
     "changelogen": "^0.5.7",
     "eslint": "^9.15.0",
     "nuxt": "^3.14.1592",
+    "sass": "^1.81.0",
     "sass-embedded": "^1.81.0",
     "typescript": "latest",
     "vue-tsc": "^2.1.10"
